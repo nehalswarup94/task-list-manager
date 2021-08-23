@@ -1,0 +1,33 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    padding: 4rem 4rem;
+
+    .title{
+        color: red;
+        font-weight: bold;
+        font-size: 1.5rem;
+        margin: 0;
+    }
+
+    .btn{
+        background-color: green;
+        color: white;
+        border: transparent;
+        cursor: pointer;
+        width: 5rem;
+        height: 2rem;
+        font-weight: 300;
+
+        &:active{
+            transform: scale(0.98);
+        }
+        &:focus{
+            outline: none;
+        }
+    }
+    .red{
+        background-color: red;
+    }
+}
