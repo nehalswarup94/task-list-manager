@@ -2,6 +2,7 @@
   "name": "task-list-manager",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://nehalswarup94.github.io/task-list-manager",
   "dependencies": {
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^11.2.7",
@@ -19,7 +20,9 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "server": "json-server --watch db.json --port 5000"
+    "server": "npx json-server --watch public/db.json --port=3001",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
